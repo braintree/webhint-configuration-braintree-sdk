@@ -1,6 +1,6 @@
 {
   "name": "webhint-configuration-braintree-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "webhint configuration for Braintree's sdk-related web packages",
   "main": "index.json",
   "repository": {
