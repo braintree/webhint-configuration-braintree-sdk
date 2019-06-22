@@ -1,0 +1,94 @@
+{
+  "connector": {
+    "name": "jsdom",
+    "options": {
+      "ignoreHTTPSErrors": true,
+      "waitFor": 5000
+    }
+  },
+  "formatters": [
+    "stylish",
+    "codeframe",
+    "summary"
+  ],
+  "hints": {
+    "axe": "error",
+    "button-type": "error",
+    "compat-api/css": "error",
+    "compat-api/html": "error",
+    "content-type": "warning",
+    "create-element-svg": "error",
+    "css-prefix-order": "error",
+    "disown-opener": "error",
+    "doctype": "error",
+    "html-checker": [
+      "error",
+      {
+        "details": true
+      }
+    ],
+    "http-compression": "warning",
+    "https-only": "error",
+    "meta-charset-utf-8": "error",
+    "meta-viewport": "error",
+    "minified-js": "error",
+    "no-bom": "error",
+    "no-broken-links": [
+      "error",
+      {
+        "method": "HEAD"
+      }
+    ],
+    "no-disallowed-headers": "warning",
+    "no-protocol-relative-urls": "error",
+    "no-vulnerable-javascript-libraries": [
+      "error",
+      {
+        "severity": "medium"
+      }
+    ],
+    "performance-budget": [
+      "warning",
+      {
+        "connectionType": "3G_EM",
+        "loadTime": 5
+      }
+    ],
+    "sri": [
+      "warning",
+      {
+        "baseline": "sha512"
+      }
+    ],
+    "ssllabs": "warning",
+    "strict-transport-security": "warning",
+    "validate-set-cookie-header": "warning"
+  },
+  "hintsTimeout": 120000,
+  "ignoredUrls": [
+    {
+      "domain": "^.+logger.+$",
+      "hints": [
+        "*"
+      ]
+    },
+    {
+      "domain": "gstatic.com",
+      "hints": [
+        "*"
+      ]
+    },
+    {
+      "domain": "!(^.+braintree.+$)",
+      "hints": [
+        "content-type",
+        "ssllabs",
+        "strict-transport-security",
+        "validate-set-cookie-header"
+      ]
+    }
+  ],
+  "parsers": [
+    "css"
+  ]
+}
