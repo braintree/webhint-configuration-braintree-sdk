@@ -30,7 +30,6 @@
   "dependencies": {
     "@hint/connector-jsdom": "^4.0.2",
     "@hint/formatter-codeframe": "^3.0.2",
-    "@hint/formatter-stylish": "^3.0.2",
     "@hint/formatter-summary": "^3.0.2",
     "@hint/hint-axe": "^3.0.2",
     "@hint/hint-button-type": "^2.1.2",
@@ -56,7 +55,9 @@
     "@hint/hint-ssllabs": "^2.2.2",
     "@hint/hint-strict-transport-security": "^2.2.2",
     "@hint/hint-validate-set-cookie-header": "^2.2.2",
-    "@hint/parser-css": "^3.0.2"
+    "@hint/parser-css": "^3.0.2",
+    "@hint/parser-javascript": "^3.0.2",
+    "hint": "^5.0.2"
   },
   "peerDependencies": {
     "hint": "^5.0.2"

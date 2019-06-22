@@ -7,7 +7,6 @@
     }
   },
   "formatters": [
-    "stylish",
     "codeframe",
     "summary"
   ],
@@ -67,6 +66,10 @@
   "hintsTimeout": 120000,
   "ignoredUrls": [
     {
+      "domain": "localhost",
+      "hints": ["https-only", "ssllabs", "http-compression"]
+    },
+    {
       "domain": "^.+logger.+$",
       "hints": [
         "*"
@@ -82,6 +85,7 @@
       "domain": "!(^.+braintree.+$)",
       "hints": [
         "content-type",
+        "minified-js",
         "ssllabs",
         "strict-transport-security",
         "validate-set-cookie-header"
@@ -89,6 +93,7 @@
     }
   ],
   "parsers": [
-    "css"
+    "css",
+    "javascript"
   ]
 }
