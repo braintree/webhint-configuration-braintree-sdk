@@ -1,6 +1,6 @@
 {
   "name": "hint-configuration-braintree-sdk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "hint configuration for Braintree's sdk-related web packages",
   "main": "index.json",
   "repository": {
