@@ -82,7 +82,7 @@
       ]
     },
     {
-      "domain": "!(^.+braintree.+$)",
+      "domain": "^.+[^braintree].+$",
       "hints": [
         "content-type",
         "minified-js",
