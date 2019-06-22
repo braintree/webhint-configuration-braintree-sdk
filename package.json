@@ -1,11 +1,11 @@
 {
-  "name": "hint-configuration-braintree-sdk",
+  "name": "webhint-configuration-braintree-sdk",
   "version": "0.0.1",
-  "description": "hint configuration for Braintree's sdk-related web packages",
+  "description": "webhint configuration for Braintree's sdk-related web packages",
   "main": "index.json",
   "repository": {
     "type": "git",
-    "url": "git@github.com:braintree/hint-configuration-braintree-sdk.git"
+    "url": "git@github.com:braintree/webhint-configuration-braintree-sdk.git"
   },
   "keywords": [
     "a11y",
@@ -24,6 +24,9 @@
     }
   ],
   "license": "MIT",
+  "files": [
+    "index.json"
+  ],
   "dependencies": {
     "@hint/connector-jsdom": "^4.0.2",
     "@hint/formatter-codeframe": "^3.0.2",
@@ -53,7 +56,9 @@
     "@hint/hint-ssllabs": "^2.2.2",
     "@hint/hint-strict-transport-security": "^2.2.2",
     "@hint/hint-validate-set-cookie-header": "^2.2.2",
-    "@hint/parser-css": "^3.0.2",
+    "@hint/parser-css": "^3.0.2"
+  },
+  "peerDependencies": {
     "hint": "^5.0.2"
   }
 }
