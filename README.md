@@ -10,6 +10,6 @@ Add this to your .hintrc and enjoy your shortcut to adding each hint & package i
 
 ```json
 {
-    "extends": ["web-recommended"]
+    "extends": ["braintree-sdk"]
 }
 ```
