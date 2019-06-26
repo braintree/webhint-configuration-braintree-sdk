@@ -1,3 +1,5 @@
+__NOTE:__ this project is in beta, do not install or rely on it yet.
+
 # Braintree's SDK-specific webhint configuration
 
 ## Install
