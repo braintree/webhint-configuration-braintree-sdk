@@ -15,19 +15,16 @@
     "button-type": "error",
     "compat-api/css": "error",
     "compat-api/html": "error",
-    "content-type": "warning",
     "create-element-svg": "error",
     "css-prefix-order": "error",
-    "disown-opener": "error",
     "doctype": "error",
+    "highest-available-document-mode": "error",
     "html-checker": [
       "error",
       {
         "details": true
       }
     ],
-    "http-compression": "warning",
-    "https-only": "error",
     "meta-charset-utf-8": "error",
     "meta-viewport": "error",
     "minified-js": "error",
@@ -38,7 +35,7 @@
         "method": "HEAD"
       }
     ],
-    "no-disallowed-headers": "warning",
+    "no-p3p": "error",
     "no-protocol-relative-urls": "error",
     "no-vulnerable-javascript-libraries": [
       "error",
@@ -53,45 +50,19 @@
         "loadTime": 5
       }
     ],
+    "scoped-svg-styles": "warning",
     "sri": [
       "warning",
       {
         "baseline": "sha512"
       }
-    ],
-    "ssllabs": "warning",
-    "strict-transport-security": "warning",
-    "validate-set-cookie-header": "warning"
+    ]
   },
   "hintsTimeout": 120000,
-  "ignoredUrls": [
-    {
-      "domain": "localhost",
-      "hints": ["https-only", "ssllabs", "http-compression"]
-    },
-    {
-      "domain": "^.+logger.+$",
-      "hints": [
-        "*"
-      ]
-    },
-    {
-      "domain": "gstatic.com",
-      "hints": [
-        "*"
-      ]
-    },
-    {
-      "domain": "^.+[^braintree].+$",
-      "hints": [
-        "content-type",
-        "minified-js",
-        "ssllabs",
-        "strict-transport-security",
-        "validate-set-cookie-header"
-      ]
-    }
-  ],
+  "ignoredUrls": [{
+    "domain": "^.+[^braintree|paypal].+$",
+    "hints": ["*"]
+    }],
   "parsers": [
     "css",
     "javascript"
